@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework5</title>
+    <style>
+        .card {
+            display: flex;
+            border-radius: 5px;
+            flex-direction: column;
+            position: relative;
+            border: solid 1px;
+            width: 200px;
+            height: 260px;
+            text-align: center;
+            
+        }
+        .card::before{ /* before command use for increate information in content */
+            content: "9";
+            font-size: 20px;
+            color:white;
+            position: absolute;
+            background-color: red;
+            border-radius: 50%;
+            padding: 5px 12px;
+            right: -12px;
+            top: -7px;
+        }
+        .card::after{ /* After use like Before */
+            content: "X";
+            font-size: 20px;
+            color: gray;
+            top: 0px;
+            left: 2px;
+            position: absolute;
+        }
+        img {
+            width: 200px;
+            height:260px;
+        }
+        h4 {
+            border-top: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https:www.svgrepo.com/show/429787/human-man-10.svg" alt="profile">
+
+        <h4>A.Rudiger</h4>
+    </div>
+</body>
+
+</html>
